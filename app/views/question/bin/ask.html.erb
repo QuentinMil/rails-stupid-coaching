@@ -1,0 +1,9 @@
+
+<form action="/answer" data-turbo="false">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form>
+
+<p>You asked: <%= @question %></p>
+<p>The coach answers: <%= @answer %></p>
+<%= link_to "Ask another question", ask_path %>
